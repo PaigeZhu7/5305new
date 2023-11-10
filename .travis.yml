@@ -1,0 +1,16 @@
+
+# Config file for automatic testing at travis-ci.org
+
+language: python
+
+python:
+  - "3.8"
+
+# Command to install dependencies
+install:
+  - pip install -r requirements.txt
+
+# Command to run tests
+script:
+  - flake8 speech_emotion_recognition/main.py
+  #- pytest
